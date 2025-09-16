@@ -441,14 +441,7 @@ footer{
 }
 
 /* 
-    TO DO: add styles to the after pseudo-element on the div in this section that will:
 
-
-
-
-        - give this a z-index of 2
-        - move this up from its original location by 50px
-        - move this to the right from its original location by 25px
 */
 #section3 div::after {
     content: "";
@@ -459,7 +452,7 @@ footer{
     background-color: var(--lt-blue);
     position: relative;
     z-index: 2;
-    transform: translate(50px, 25px);
+    transform: translate(25px, -50px);
 }
 
 
@@ -510,10 +503,7 @@ footer{
 
 /* For the third div, let's include the a background color, allow the image to tile, but center the tiling in the container */
 /* 
-    TO DO: add styles to the div with an ID of bg-img-3 in this section that will:
-        - add the lt-blue color to the background
-        - center the image pattern in the container
-        - add the puppy-photo as a repeating background to the container
+
 */
 #bg-img-3{
     background-color: var(--lt-blue);
@@ -539,13 +529,13 @@ footer{
 
 /* For the first div, let's add the pattern from the images folder called wood, it is from Transparent Textures. Include the lt-gray background color as well */
 /* 
-    TO DO: add styles to the div with an ID of pattern1 in this section that will:
-        - set the background color to light-gray
-        - scale the background image to 110% 
-        - add the wood background texture from the images folder
+
 */
 #pattern1{
-    
+    background-color: var(--light-gray);
+    width: 110%;
+    height: 110%;
+    background-image: url(images/wood.png);
 }
 
 /* For the second div, the pattern is from from Hero Pattern. These actually give you SVG code to paste into your CSS */
@@ -584,9 +574,7 @@ footer{
 
 /* Let's tell our images to float to the left. Remember, they'll sort of pile up next to each other in the container, but only if they're narrow enough to fit! */
 /* 
-    TO DO: add styles to the image with the ID of corgi in this section that will:
-        - float this image to the left
-        - add 1 rem of margin to the right of the image
+
 */
 #corgi{
     margin-right: 1rem;
@@ -598,20 +586,18 @@ footer{
 }
 
 /* 
-    TO DO: add styles to the image with an ID of dog-house in this section that will:
-        - float the image to the right
+
 */
 #dog-house{
-    
+    float: right;
 }
 
 /* When you use floats, you have to be sure to clear them so that the rest of your page after the floats displays normally. Let's use the display section to clear the floats (because it is the next tag outside of our container in the HTML) */
 /* 
-    TO DO: add styles to the display section that will:
-        - clear any floats
+
 */
 #section9{
-    
+    clear: both;
 }
 
 /* ------------- SECTION 9 STYLES ---------------- */
